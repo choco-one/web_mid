@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+
+  <!--사진 바꿔주는 함수-->
+  <script type="text/javascript">
+    var imgArray=new Array();
+    imgArray[0]="1.jpg";
+    imgArray[1]="2.jpg";
+    imgArray[2]="3.jpg";
+    imgArray[3]="4.jpg";
+    function showImage(){
+      var imgNum=Math.round(Math.random()*3);
+      var objImg=document.getElementById("introimg");
+      objImg.src=imgArray[imgNum];
+      setTimeout(showImage,2000); }
+  </script>
+
+  <!--배경 스타일 -->
+  <style>
+    body{
+      margin: 0 auto;
+      background: blanchedalmond;
+    }
+  </style>
+
+  <!--고정바 스타일 -->
+  <style>
+    #left_bar>a {
+      text-shadow: 10px 10px 10px black;
+      color: red;
+      font-size: 22px;
+      font-family: "Arial Narrow", "Times New Roman", Elephant;
+      position: relative;
+    }
+
+    #left_bar.hover>a {
+      color: white;
+      font-size: 25px;
+    }
+
+    #left_bar {
+      background: #211F20;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+    }
+  </style>
+
+  <!--장르 스타일 -->
+  <style>
+    li>a:first-child {
+      color: white;
+      position: relative;
+    }
+
+    .genre {
+      margin: 10px 10px;
+      padding: 30px 30px;
+      color: white;
+      list-style: none;
+    }
+
+    .genre.hover {
+      margin: 10px 10px;
+      padding: 30px 30px;
+      color: white;
+      font-size: 18px;
+    }
+  </style>
+
+  <!--메인박스 스타일 -->
+  <style>
+    .main_box {
+      font-family: arial;
+      font-size: 16px;
+      font-weight: lighter;
+      margin: 70px 500px;
+      padding: 100px 40px 90px 90px;
+      width: 800px;
+      height: 400px;
+      background-color: seashell;
+    }
+  </style>
+</head>
+
+<body onload="showImage()">
+<!--고정바-->
+<div class="left_bar" id="left_bar">
+  <a href="home.html"><img src="netflixicon.jpg" height="80" width="200"/></a>
+  <ul class="genre" id="genre">
+    <li><a href="movie.html"><h3>영화</h3></a></li>
+    <li><a href="drama.html"><h3>드라마</h3></a></li>
+    <li><a href="ani.html"><h3>애니메이션</h3></a></li>
+    <li><a href="docu.html"><h3>다큐멘터리</h3></a></li>
+  </ul>
+</div>
+
+<div class="main_box">
+    <img id="introimg" border="0">
+</div>
+</body>
+</html>
