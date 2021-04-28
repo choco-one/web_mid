@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
-  <title>Homepage</title>
+  <title>Drama</title>
 
   <!--배경 스타일 -->
   <style>
@@ -59,6 +59,83 @@
     }
   </style>
 
+  <!--메인박스-->
+  <style>
+    .show_box {
+      display: flex;
+      font-family: arial;
+      margin: 50px 300px;
+      padding: 50px 70px;
+      width: 1000px;
+      height: 700px;
+      background-color: seashell;
+      color: black;
+      flex-flow: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: space-around;
+    }
+  </style>
+
+  <!--아이템-->
+  <style>
+    .item{
+    }
+  </style>
+
+  <!--스크립트-->
+  <script>
+    window.onload = function() {
+      //스위트홈
+      var image_1 = document.getElementById('image1');
+      image_1.src = 'http://img.newspim.com/news//2020/12/16/2012161205554410.jpg';
+      image_1.width = 220;
+      image_1.height = 330;
+
+      //설국열차
+      var image_2 = document.getElementById('image2');
+      image_2.src = 'https://dimg.donga.com/wps/NEWS/IMAGE/2020/05/31/101287976.2.jpg';
+      image_2.width = 220;
+      image_2.height = 330;
+
+      //인간수업
+      var image_3 = document.getElementById('image3');
+      image_3.src = 'https://blog.kakaocdn.net/dn/rL6yx/btqEv0hJ2Sx/9Fci5Gy7pOqjvMVuGv5fK0/img.jpg';
+      image_3.width = 220;
+      image_3.height = 330;
+
+      //킹덤
+      var image_4 = document.getElementById('image4');
+      image_4.src = 'http://www.iconsumer.or.kr/news/photo/201912/10826_13630_154.jpg';
+      image_4.width = 220;
+      image_4.height = 330;
+
+      //브리저튼
+      var image_5 = document.getElementById('image5');
+      image_5.src = 'https://blog.kakaocdn.net/dn/bMYvFp/btqS29KF9bd/jdPSNkTGK0lunapSyCbxtk/img.jpg';
+      image_5.width = 220;
+      image_5.height = 330;
+
+      //위쳐
+      var image_6 = document.getElementById('image6');
+      image_6.src = 'https://cdn.gamemeca.com/data_center/206/851/20191223180634.jpg';
+      image_6.width = 220;
+      image_6.height = 330;
+
+      //기묘한이야기
+      var image_7 = document.getElementById('image7');
+      image_7.src = 'https://lh3.googleusercontent.com/proxy/uXpZukaD802ZJbzVl7HnBJauoOIDmk0k7dSekj8j4fEGoaagNXFlPvzSN6aCEzn-3pWA525wMwFN6epLvNYfx3VGnunpnT4MiZTBNfPAxeaYQTvT8zqtteolLl3Ktp1JaBmdBt2RYU99tydluyAwJ_eMSCI6csOYcmhx6PIOtxFCngHmBiRdJW4MqelkyNG26zlZLHT5zVRLQ7RKbclOSTy7unhcsrFCvQN5t6oe0aprnmdG7tzJi18Uy-AwZX4m-epPvHyWujiwb2CG_KNWKp3TJ1x4tuNsoKdO5RLCneKGAA0B_h70Xn9wsXK2_mIwRxZ9-sDCum-ZfBVcN1ULL9dSBett8iJKgw';
+      image_7.width = 220;
+      image_7.height = 330;
+
+      //루시퍼
+      var image_8 = document.getElementById('image8');
+      image_8.src = 'https://1.bp.blogspot.com/-mGek3NyX3eU/XcEyCW-JmKI/AAAAAAAAOsk/fxh3nIWc6WoQW1GQGDJVpItGpeNlQYiVgCLcBGAsYHQ/s1600/1cxevpavvpw21.jpg';
+      image_8.width = 220;
+      image_8.height = 330;
+    };
+  </script>
+
 </head>
 <body>
 <!--고정바-->
@@ -70,6 +147,34 @@
     <li id="g"><a href="ani.html"><h3>애니메이션</h3></a></li>
     <li id="g"><a href="docu.html"><h3>다큐멘터리</h3></a></li>
   </ul>
+</div>
+
+<!--장르소개박스-->
+<div class="show_box">
+  <div class="item">
+    <a href="sweethome.html"><image id="image1"/></a>
+  </div>
+  <div class="item">
+    <a href="snowfierce.html"><image id="image2"/></a>
+  </div>
+  <div class="item">
+    <a href="humanclass.html"><image id="image3"/></a>
+  </div>
+  <div class="item">
+    <a href="kingdom.html"><image id="image4"/></a>
+  </div>
+  <div class="item">
+    <a href="brigton.html"><image id="image5"/></a>
+  </div>
+  <div class="item">
+    <a href="witcher.html"><image id="image6"/></a>
+  </div>
+  <div class="item">
+    <a href="strange.html"><image id="image7"/></a>
+  </div>
+  <div class="item">
+    <a href="lucifer.html"><image id="image8"/></a>
+  </div>
 </div>
 </body>
 </html>

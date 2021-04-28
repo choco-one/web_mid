@@ -59,6 +59,83 @@
     }
   </style>
 
+  <!--메인박스-->
+  <style>
+    .show_box {
+      display: flex;
+      font-family: arial;
+      margin: 50px 300px;
+      padding: 50px 70px;
+      width: 1000px;
+      height: 700px;
+      background-color: seashell;
+      color: black;
+      flex-flow: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: space-around;
+    }
+  </style>
+
+  <!--아이템-->
+  <style>
+    .item{
+    }
+  </style>
+
+  <!--스크립트-->
+  <script>
+    window.onload = function() {
+      //귀멸의칼날
+      var image_1 = document.getElementById('image1');
+      image_1.src = 'https://image.tving.com/upload/cms/caip/CAIP0900/P001227842.jpg';
+      image_1.width = 220;
+      image_1.height = 330;
+
+      //카케구루이
+      var image_2 = document.getElementById('image2');
+      image_2.src = 'https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F99758B4E5AFEA6D21A';
+      image_2.width = 220;
+      image_2.height = 330;
+
+      //비스타즈
+      var image_3 = document.getElementById('image3');
+      image_3.src = 'https://an2-img.amz.wtchn.net/image/v1/watcha/image/upload/c_fill,h_700,q_80,w_490/v1607585163/tb2xnra7wugsnpmuusxa.jpg';
+      image_3.width = 220;
+      image_3.height = 330;
+
+      //원펀맨
+      var image_4 = document.getElementById('image4');
+      image_4.src = 'https://mblogthumb-phinf.pstatic.net/MjAyMDA1MDNfMTQ4/MDAxNTg4NTE1NzIzNjk0.DpjlRU3zuR88fk-9faAh9j8NI3oSos8wivKVgMYfZJog.GenQzKCmpxa5BocXgNatLFzRebrcRwGUeuL_NXYDzb0g.JPEG.dance8090/1588515765338.jpg?type=w800';
+      image_4.width = 220;
+      image_4.height = 330;
+
+      //암살교실
+      var image_5 = document.getElementById('image5');
+      image_5.src = 'https://image.tving.com/upload/cms/caip/CAIP0900/P001245542.jpg';
+      image_5.width = 220;
+      image_5.height = 330;
+
+      //바이올렛에버가든
+      var image_6 = document.getElementById('image6');
+      image_6.src = 'https://an2-img.amz.wtchn.net/image/v1/watcha/image/upload/c_fill,h_400,q_80,w_280/v1585299682/aojwjqk8olckwsbcq7fq.jpg';
+      image_6.width = 220;
+      image_6.height = 330;
+
+      //진격의거인
+      var image_7 = document.getElementById('image7');
+      image_7.src = 'https://image.tving.com/upload/cms/caip/CAIP0900/P000376989.jpg';
+      image_7.width = 220;
+      image_7.height = 330;
+
+      //도쿄구울
+      var image_8 = document.getElementById('image8');
+      image_8.src = 'https://image.tving.com/upload/cms/caip/CAIP0900/P000142016.jpg';
+      image_8.width = 220;
+      image_8.height = 330;
+    };
+  </script>
+
 </head>
 <body>
 <!--고정바-->
@@ -70,6 +147,34 @@
     <li id="g"><a href="ani.html"><h3>애니메이션</h3></a></li>
     <li id="g"><a href="docu.html"><h3>다큐멘터리</h3></a></li>
   </ul>
+</div>
+
+<!--장르소개박스-->
+<div class="show_box">
+  <div class="item">
+    <a href="nip.html"><image id="image1"/></a>
+  </div>
+  <div class="item">
+    <a href="victory.html"><image id="image2"/></a>
+  </div>
+  <div class="item">
+    <a href="extract.html"><image id="image3"/></a>
+  </div>
+  <div class="item">
+    <a href="oldguard.html"><image id="image4"/></a>
+  </div>
+  <div class="item">
+    <a href="landm.html"><image id="image5"/></a>
+  </div>
+  <div class="item">
+    <a href="staway.html"><image id="image6"/></a>
+  </div>
+  <div class="item">
+    <a href="birdbox.html"><image id="image7"/></a>
+  </div>
+  <div class="item">
+    <a href="outthewire.html"><image id="image8"/></a>
+  </div>
 </div>
 </body>
 </html>
