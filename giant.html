@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>진격의 거인</title>
+
+    <!--배경 스타일 -->
+    <style>
+        body{
+            margin: 0 auto;
+            background: blanchedalmond;
+        }
+    </style>
+
+    <!--고정바 스타일 -->
+    <style>
+        #left_bar>a {
+            text-shadow: 10px 10px 10px black;
+            color: red;
+            font-size: 22px;
+            font-family: "Arial Narrow", "Times New Roman", Elephant;
+            position: relative;
+        }
+
+        #left_bar.hover>a {
+            color: white;
+            font-size: 25px;
+        }
+
+        #left_bar {
+            background: #211F20;
+            position: absolute;
+            top: 0;
+            bottom: -500px;
+            left: 0;
+            width: 200px;
+        }
+    </style>
+
+    <!--장르 스타일 -->
+    <style>
+        li>a:first-child {
+            color: white;
+            position: relative;
+        }
+
+        .genre {
+            margin: 10px 10px;
+            padding: 30px 30px;
+            color: white;
+            list-style: none;
+        }
+
+        .genre.hover {
+            margin: 10px 10px;
+            padding: 30px 30px;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+
+    <!--메인박스-->
+    <style>
+        .show_box {
+            display: flex;
+            font-family: arial;
+            margin: 50px 300px;
+            padding: 50px 70px;
+            width: 1000px;
+            height: 700px;
+            background-color: seashell;
+            color: black;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+    </style>
+
+</head>
+<body>
+<!--고정바-->
+<div class="left_bar" id="left_bar">
+    <a href="home.html"><img src="netflixicon.jpg" height="80" width="200"/></a>
+    <ul class="genre" id="genre">
+        <li id="g"><a href="movie.html"><h3>영화</h3></a></li>
+        <li id="g"><a href="drama.html"><h3>드라마</h3></a></li>
+        <li id="g"><a href="ani.html"><h3>애니메이션</h3></a></li>
+        <li id="g"><a href="docu.html"><h3>다큐멘터리</h3></a></li>
+    </ul>
+</div>
+
+<!--메인박스-->
+<div class="show_box">
+
+</div>
+</body>
+</html>
