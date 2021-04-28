@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
+    <title>Movie</title>
 
     <!--배경 스타일 -->
     <style>
@@ -31,7 +31,7 @@
             background: #211F20;
             position: absolute;
             top: 0;
-            bottom: 0;
+            bottom: -500px;
             left: 0;
             width: 200px;
         }
@@ -59,6 +59,84 @@
         }
     </style>
 
+    <!--메인박스-->
+    <style>
+        .show_box {
+            display: flex;
+            font-family: arial;
+            margin: 50px 300px;
+            padding: 50px 70px;
+            width: 1000px;
+            height: 700px;
+            background-color: seashell;
+            color: black;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+    </style>
+
+    <!--아이템-->
+    <style>
+        .item{
+
+        }
+    </style>
+
+    <!--스크립트-->
+    <script>
+        window.onload = function() {
+            //낙원의밤
+            var image_1 = document.getElementById('image1');
+            image_1.src = 'https://blog.kakaocdn.net/dn/czvMNN/btq08uuiyN7/Ie8VRt2yFJ2oOYnBQQtKJ0/img.jpg';
+            image_1.width = 220;
+            image_1.height = 330;
+
+            //승리호
+            var image_2 = document.getElementById('image2');
+            image_2.src = 'https://image.chosun.com/sitedata/image/202102/09/2021020902567_0.png';
+            image_2.width = 220;
+            image_2.height = 330;
+
+            //익스트랙션
+            var image_3 = document.getElementById('image3');
+            image_3.src = 'https://mblogthumb-phinf.pstatic.net/MjAyMDA0MDhfMjA0/MDAxNTg2MzEwODUwNTk0.TP5LbTyHss5Hdc4j0zq0R4rgouQ_MPkeSAXWsi4Mf4gg.qF3mvvwNJBu3A1SVXf-vGj2O0SFmqKmmE3TlK86TdjEg.JPEG.insu1229/1586310849709.jpg?type=w800';
+            image_3.width = 220;
+            image_3.height = 330;
+
+            //올드가드
+            var image_4 = document.getElementById('image4');
+            image_4.src = 'https://upload.wikimedia.org/wikipedia/ko/f/f4/%EC%98%AC%EB%93%9C%EA%B0%80%EB%93%9C_%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg';
+            image_4.width = 220;
+            image_4.height = 330;
+
+            //러브앤몬스터스
+            var image_5 = document.getElementById('image5');
+            image_5.src = 'https://t1.daumcdn.net/cfile/tistory/99F5484D5F932CFB08';
+            image_5.width = 220;
+            image_5.height = 330;
+
+            //스토어웨이
+            var image_6 = document.getElementById('image6');
+            image_6.src = 'https://t1.daumcdn.net/movie/87c1a13b3feb6bcad83a4eaaa692901e99c168e7';
+            image_6.width = 220;
+            image_6.height = 330;
+
+            //버드박스
+            var image_7 = document.getElementById('image7');
+            image_7.src = 'http://t1.daumcdn.net/movie/a972c96419404ead973e3c5a0eea80e71542465353768';
+            image_7.width = 220;
+            image_7.height = 330;
+
+            //아웃사이드더와이어
+            var image_8 = document.getElementById('image8');
+            image_8.src = 'https://t1.daumcdn.net/movie/6d9fa5f58ce32702e44a13f9d07e3779c1991fa8';
+            image_8.width = 220;
+            image_8.height = 330;
+        };
+    </script>
+
 </head>
 <body>
 <!--고정바-->
@@ -70,6 +148,34 @@
         <li id="g"><a href="ani.html"><h3>애니메이션</h3></a></li>
         <li id="g"><a href="docu.html"><h3>다큐멘터리</h3></a></li>
     </ul>
+</div>
+
+<!--장르소개박스-->
+<div class="show_box">
+    <div class="item">
+        <a href="nip.html"><image id="image1"/></a>
+    </div>
+    <div class="item">
+        <a href="victory.html"><image id="image2"/></a>
+    </div>
+    <div class="item">
+        <a href="extract.html"><image id="image3"/></a>
+    </div>
+    <div class="item">
+        <a href="oldguard.html"><image id="image4"/></a>
+    </div>
+    <div class="item">
+        <a href="landm.html"><image id="image5"/></a>
+    </div>
+    <div class="item">
+        <a href="staway.html"><image id="image6"/></a>
+    </div>
+    <div class="item">
+        <a href="birdbox.html"><image id="image7"/></a>
+    </div>
+    <div class="item">
+        <a href="outthewire.html"><image id="image8"/></a>
+    </div>
 </div>
 </body>
 </html>
